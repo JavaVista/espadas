@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "card",
-        "player"
+        "player",
+        "app"
     ]
 }
