@@ -9,6 +9,6 @@ export class CardComponent {
   @Input()
   value: string;
   @Input()
-  suite: '♠️' | '♣️' | '♥️' | '♦️';
+  suit: '♠️' | '♣️' | '♥️' | '♦️';
 
 }
