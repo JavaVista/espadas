@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Card } from './card';
 
 @Component({
   selector: 'app-card',
@@ -7,8 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
   @Input()
-  value: string;
-  @Input()
-  suit: '♠️' | '♣️' | '♥️' | '♦️';
+  card: Card | undefined;
 
 }
