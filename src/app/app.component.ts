@@ -25,7 +25,13 @@ function createDeck(): Card[] {
 
 function shuffleDeck(deck: Card[]): void {
   for (let index = 0; index < deck.length; index++) {
-    const swapIndex = Math.floor(Math.random() * deck.length - index);
+    const swapIndex = Math.floor(Math.random() * (deck.length - index));
     [deck[index], deck[swapIndex]] = [deck[swapIndex], deck[index]];
   }
 }
+
+// TODO: Sanity Check test for card count like this 
+// document.querySelectorAll('app-card');
+// TODO: Check for card duplicates
+//const arrayOfCards = Array.from(document.querySelectorAll('app-card'));
+//new Set(arrayOfCards.map(card => card.textContent.trim()));
