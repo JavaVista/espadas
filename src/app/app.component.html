@@ -1,5 +1,19 @@
 <h1>Espadas</h1>
 
-<ng-container *ngFor="let dk of deck">
+<!-- <ng-container *ngFor="let dk of deck">
   <app-card [card]="dk"></app-card>
+</ng-container> -->
+
+<div class="play-space">
+    <ng-container *ngFor="let trick of currentTrick">
+        <app-card [card]="trick"></app-card>
+    </ng-container>
+
+</div>
+
+<!-- <ng-container *ngFor="let py of players"> -->
+<h2>Your hand</h2>
+<ng-container *ngFor="let cd of players[0].hand">
+    <app-card  (click)="playCard(players[0], cd)"[card]="cd"></app-card>
 </ng-container>
+<!-- </ng-container> -->

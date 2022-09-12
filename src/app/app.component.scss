@@ -1,3 +1,11 @@
 app-card {
     margin: 4px;
 }
+
+.play-space{
+    height: 600px;
+    width: 800px;
+    border: 1px dotted black;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+}
